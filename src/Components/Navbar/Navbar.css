@@ -33,11 +33,23 @@
     width : 0;
     background : white;
     transition: width 0.3s ease-in-out;
+
 }
 
 .nav-menu li:hover{
     color: white;
+    cursor : pointer;
 }
 .nav-menu li:hover::after {
     width: 100%;
+}
+
+.nav-menu a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherits the color from its parent */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.nav-menu a:hover {
+    color: #DA7C25; /* Change this to the color you want on hover */
 }
